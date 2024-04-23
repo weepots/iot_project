@@ -23,6 +23,7 @@ export default function App() {
     { label: "Male", value: "male" },
     { label: "Female", value: "female" },
   ]);
+  const backend_server = "http://192.168.1.188:8000";
 
   const cameraRef = useRef(null);
 
@@ -58,7 +59,7 @@ export default function App() {
   };
 
   const classifyPicture = async () => {
-    const endpoint = "http://192.168.1.188:8000/classify";
+    const endpoint = backend_server + "/classify";
     try {
       const base64Image = await uriToBase64(image);
       const options = {
@@ -90,7 +91,7 @@ export default function App() {
   }
 
   const add_user_image = async () => {
-    const endpoint = `http://192.168.1.188:8000/add_user_image?gender=${value}`;
+    const endpoint = `${backend_server}/add_user_image?gender=${value}`;
     const options = {
       method: "GET",
     };
@@ -104,7 +105,7 @@ export default function App() {
   };
 
   const train_new_model = async () => {
-    const endpoint = "http://192.168.1.188:8000/train_new_model";
+    const endpoint = backend_server + "/train_new_model";
     const options = {
       method: "GET",
     };
