@@ -1,5 +1,10 @@
 # Gender Classification Mobile Application
 
+## Demo
+
+https://youtu.be/xtEQiDlOB0M  
+Let me know if it doesnt work!
+
 ## Installation
 
 ```
@@ -23,7 +28,7 @@ mkdir datasets/
 ## Training the ResNet 101 Model
 
 The model is a ResNet101 model that has a total of 101 layers. I attached the output to the Fully Connected layer with a Sigmoid function to determine if the person is female or male.
-You can get the CelebA dataset from this [link](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
+You can get the CelebA dataset from this [link](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html).
 
 The `resnet_pretrained.pt` file is with me, you can train your own by using the `initial_train.ipynb` file. I recommend training using `initial_train.ipynb` file instead of the UI as there are more controllable parameters. This model is quite large so training will require a decent GPU (min 6GB VRAM). I trained the weights using the SCSEGPU-TC Cluster which have Tesla V100, not sure how it will perform on other GPUs for training. Inference can be done on laptop.
 
