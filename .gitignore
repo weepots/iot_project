@@ -1,0 +1,40 @@
+flask-backend/datasets/
+flask-backend/venv/
+flask-backend/__pycache__/
+flask-backend/.DS_Store
+flask-backend/resnet_pretrain.pt
+
+
+iot-frontend/node_modules/
+
+# Expo
+iot-frontend/.expo/
+iot-frontend/dist/
+iot-frontend/web-build/
+
+# Native
+iot-frontend/*.orig.*
+iot-frontend/*.jks
+iot-frontend/*.p8
+iot-frontend/*.p12
+iot-frontend/*.key
+iot-frontend/*.mobileprovision
+
+# Metro
+iot-frontend/.metro-health-check*
+
+# debug
+iot-frontend/npm-debug.*
+iot-frontend/yarn-debug.*
+iot-frontend/yarn-error.*
+
+# macOS
+iot-frontend/.DS_Store
+iot-frontend/*.pem
+
+# local env files
+iot-frontend/.env*.local
+
+# typescript
+iot-frontend/.tsbuildinfo
+.DS_Store
